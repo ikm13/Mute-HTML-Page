@@ -419,5 +419,12 @@ body {
      margin: 0 486px;
      margin-top: 10px;
  }
+ .myfooter-img {
+    background-image: url("../images/nav-img.jpg");
+    background-size: cover;
+    height: 35px;
+    margin: 0 486px;
+    margin-top: 10px;
+}
  
   

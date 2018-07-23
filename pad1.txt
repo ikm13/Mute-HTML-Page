@@ -1,0 +1,5 @@
+- Use bootstrap container
+- Correct indentation
+- meaningful class names
+- use <li> only for similar items
+- Finally, use pixelPerfect to check design yourselves

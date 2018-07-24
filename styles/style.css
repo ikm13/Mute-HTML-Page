@@ -1,11 +1,19 @@
 /* STYLESHEET */
+@font-face {
+    font-family: 'mp';
+    src: url('MyriadPro-Regular.eot'); 
+    src: url('MyriadPro-Regular.eot?#iefix') format('embedded-opentype'), 
+        url('MyriadPro-Regular.woff') format('woff'), 
+        url('MyriadPro-Regular.ttf')  format('truetype'),
+        url('MyriadPro-Regular.svg#svgFontName') format('svg'); 
+}
 
 body {
     margin: 0 auto;
  }
  h2 {
-    font-size: 25px;
-    font-family: Oswald;
+    font-size: 20px;
+    font-family: 'mp';
     color: #27a8bd;
   
   
@@ -53,11 +61,13 @@ body {
  
  .desc {
    
-    align-items: center;
-    padding: 7px;
-    padding-right: 40px;
-    margin-right: 5px;
+    padding-right: 36px;
+    padding-left: 5px;
+    padding-top: 6px;
  }
+  .shift {
+      padding-left: 10px;
+  }
  .desc-icon1 {
         background-image: url("../images/icon2.jpg");
         background-size: cover;
@@ -70,7 +80,7 @@ body {
     background-size: cover;
     height: 40px;
     width: 40px;
-    margin-bottom: 16px;
+    margin-bottom: 17px;
 }
 .desc-icon3 {
     background-image: url("../images/icon3.jpg");
@@ -87,7 +97,8 @@ body {
     margin-bottom: 13px;
 }
   .desc-heading {
-      font-size: 16px;
+      font-size: 13px;
+      padding-bottom: 6px;
   }
  
  .about-comp {
@@ -103,25 +114,40 @@ body {
  .about-comp-img {
      background-image: url("../images/pic2.jpg");
      background-size: contain;
-     width: 452px;
-     height: 282px;
+     width: 449px;
+     height: 280px;
  }
- 
- 
+ #about-comp-title {
+    padding-top: 2px;
+    letter-spacing: 0.29px;
+ }
+ #about-content {
+     padding-top: 24px;
+     padding-left: 2px;
+ }
+ #about-button {
+    border-color: dodgerblue; 
+    border-width: 1px;
+    margin-top: 144px;
+    margin-left: 3px;
+    height: 30px;
+    width: 79px;
+ }
  .latest-works {
      height: 883px;
  }
 
  .nav-el {
-     padding-top: 64px;
+     padding-top: 65px;
+     padding-left: 3px;
  }
+  #nav1 {
+      word-spacing: 7px;
+  }
   #nav1 a {
      
-      text-align: left;
-      padding: 12px;
-      padding-right: 19px;
-      padding-left: 0;
-      font-size: 12px;
+      margin-right: 17px;
+      font-size: 11px;
       font-family: sans-serif;
       color: rgb(148, 148, 148);
   }
@@ -133,7 +159,7 @@ body {
 
   .latest-works .container {
      padding-bottom: 40px;
-     padding-top: 84px;
+     padding-top: 86px;
      padding-left: 118px;
     
     }
@@ -141,16 +167,19 @@ body {
         padding-left: 32px;
         padding-top: 5px;
     }
+     #latest-title {
+         letter-spacing: 0.7px;
+     }
      .latest-box {
         height: 268px;
-        width: 215px;
-        margin-right: 13px;
-        margin-bottom: 14px;
+        width: 216px;
+        margin-right: 11.9999995px;
+        margin-bottom: 17px;
     }
      .box-content {
         height: 268px;
-        width: 215px;
-        background-color: whitesmoke;
+        width: 216px;
+        background-color: rgba(245, 245, 245, 0.966);
     }
      .bc-pic1 {
          background-image: url("../images/p1.jpg");
@@ -198,14 +227,37 @@ body {
          align-items: center; 
          height: 15%;
       }
+      #all-text {
+        text-transform: uppercase;
+        font-size: 9px;
+        padding-top: 7px;
+        padding-right: 61px;
+      }
+      #all-heart {
+        padding-top: 14px;
+        font-size: 18px;
+        padding-right: 1px;
+      }
+      #heart-color {
+          color: rgba(190, 174, 174, 0.342);
+      }
       .vector-smart {
         display: flex; 
         justify-content: space-around; 
         align-items: center; 
         height: 15%;
       }
+      .vector-text {
+        font-size: 11px;
+        padding-bottom: 16px;
+        letter-spacing: 0.4px;
+        padding-left: 4px;
+      }
       .vector-number {
           color: #27a8bd;
+          padding-bottom: 21px;
+          font-size: 12px;
+          padding-right: 4px;
       }
      .latest-blog {
          background-color: #f4f4f4;
@@ -214,17 +266,21 @@ body {
      }
      .latest-blog .container {
          
-         padding-top: 93px;
-         padding-left: 121px;
+         padding-top: 92px;
+         padding-left: 119px;
      }
+     #blog-title {
+        letter-spacing: 0.1px;
+        word-spacing: 2px;
+     } 
       .blog-elements {
           display: flex;
           flex-flow: row wrap;
           list-style: none; 
         padding-left: 0; 
-        padding-top: 38px;
-         width: 894px;
-         height: 422px;
+        padding-top: 44px;
+         width: 897px;
+         height: 428px;
 
      }
      .blog1 {
@@ -290,6 +346,10 @@ body {
      .pricing-plan {
          height: 668px;
      }
+      #pricing-title {
+        letter-spacing: 0.3px;
+        word-spacing: 2px;
+      }
    
          .pricing-plan .container {
             
@@ -305,7 +365,7 @@ body {
              flex-flow: row wrap;
              justify-content: flex-start;
              padding-left: 4px;
-             padding-top: 103px;
+             padding-top: 105px;
 
          }
          .plan1 {
@@ -315,7 +375,7 @@ body {
              
        .box2 {
            width: 216px;
-           height: 307px;
+           height: 305px;
            
            padding: 0px 10px 0px 10px;
             text-align: center;
@@ -327,9 +387,15 @@ body {
        }
        .box-elements {
            height: 100%;
+           padding-top: 34px;
        }
+        #pricing-plan-heart {
+            
+            font-size: 20px;
+        }
        .box2-title {
-           font-size: 17px;
+           font-size: 13.9px;
+           line-height: 3;
        }
        
       
@@ -339,6 +405,7 @@ body {
        }
        .hover-b {
            border-style: none;
+           margin-top: 49px;
        }
        .hover-b:hover {
            border-style: solid;
@@ -351,7 +418,7 @@ body {
            height: 466px;
        }
        .contact-details .container {
-           padding: 90px 0;
+           padding: 97px 0;
            padding-left: 118px;
        }
       .contact-info {
@@ -360,9 +427,15 @@ body {
       .contact-us {
           width: 563px;
       }
+      #contact-title {
+        word-spacing: 2px;
+      }
+     
       .cont-form {
           padding-top: 44px;
-      }
+          opacity: 0.3;
+}
+      
       #name {
            width: 255px;
       }
@@ -384,12 +457,18 @@ body {
         width: 85px;
         height: 35px;
       }
+      .submit-text {
+        color: dodgerblue;
+      }
       .off-address {
           padding-left: 27px;
       }
+      #off-add-title {
+        word-spacing: -4.5px;
+      }
       .off-id {
-        margin-top: 49px;
-        margin-left: 7px;
+        margin-top: 51px;
+        margin-left: 6px;
         line-height: 1.8;
       }
       .foot-nav {
@@ -416,15 +495,8 @@ body {
      background-image: url("../images/nav-img.jpg");
      background-size: cover;
      height: 35px;
-     margin: 0 486px;
+     margin: 0 476px;
      margin-top: 10px;
  }
- .myfooter-img {
-    background-image: url("../images/nav-img.jpg");
-    background-size: cover;
-    height: 35px;
-    margin: 0 486px;
-    margin-top: 10px;
-}
- 
+
   

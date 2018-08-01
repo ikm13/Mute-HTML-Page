@@ -2,10 +2,10 @@
 
 @font-face {
     font-family: 'Dosis-Bold';
-    src: url('Dosis-Bold.eot?#iefix') format('embedded-opentype');
-    src: url('Dosis-Bold.woff') format('woff'),
-     url('Dosis-Bold.ttf')  format('truetype'),
-      url('Dosis-Bold.svg#Dosis-Bold') format('svg');
+    src: url('../fonts/Dosis-Bold.eot?#iefix') format('embedded-opentype');
+    src: url('../fonts/Dosis-Bold.woff') format('woff'),
+        url('../fonts/Dosis-Bold.ttf')  format('truetype'),
+        url('../fonts/Dosis-Bold.svg#Dosis-Bold') format('svg');
   }
   
 body {
@@ -500,3 +500,29 @@ body {
  }
 
   
+ @media screen and (max-width: 1999px) {
+
+ }
+
+ @media screen and (max-width: 991px) {
+
+ }
+
+ @media screen and (max-width: 767px) {
+
+ }
+
+ @media screen and (max-width: 576px) {
+    .test1 {
+
+    }
+    .test2 {
+        
+    }
+ }
+
+ @media screen and (max-width: 479px) {
+
+ }
+
+

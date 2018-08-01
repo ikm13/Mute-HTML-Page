@@ -1,0 +1,11 @@
+@font-face {
+  font-family: 'Dosis-Bold';
+  src: url('../fonts/Dosis-Bold.eot?#iefix') format('embedded-opentype');
+  src: url('../fonts/Dosis-Bold.woff') format('woff'),
+      url('../fonts/Dosis-Bold.ttf')  format('truetype'),
+      url('../fonts/Dosis-Bold.svg#Dosis-Bold') format('svg');
+}
+  
+body {
+  margin: 0;
+}

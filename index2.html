@@ -17,16 +17,54 @@
 
 	<body>
     <header class="c1">
-      <div class="banner">
-        <!-- <img id="img1" src="C:\Users\ARATRIKA\Desktop\Itobuz\images\IMG-20180619-WA0018.jpg"> -->
-      </div>
+      <nav class="navbar navbar-expand-lg">
+        <a class="nav-brand" href="#">
+          <img src="./images/Logo.png" alt="Page Logo">
+        </a>
+        <button class="navbar-toggler" type="button">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <img src="./images/nav1.png">
+              </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <img src="./images/nav2.png">
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <img src="./images/nav3.png">
+                </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <img src="images/nav4.png">
+              </a>
+            </li>
+          </ul>
+        </div>    
+
+        
+      </nav>
+      
     </header>
+    <section class="banner">
+     
+    </section>
     <section class="about">
       <div class="container">
         <div class="site-features row">
           <div class="desc col-sm-6 col-md-3">
-            <div class="desc-icon1">
-            </div>
+            <div class="d-icon">
+              <div class="desc-icon1">
+
+              </div>
+            </div>  
             <h2 class="section-title">DESIGN</h2>
             <p>Hey you, out there in the cold, sitting naked by the phone, would you touch me?</p>  
           </div>
@@ -60,7 +98,12 @@
           <div class="col-sm-6">
             <div class="about-comp-info">
               <h2 class="section-title">ABOUT COMPANY</h2>
-              <div id="about-content"><p>Hey you, out there in the cold, sitting naked by the phone, would you touch me?</p></div>
+                <div class="blue-line-about-comp">
+                  <hr class="blue-hr">
+                </div>
+              <div class="about-content"><p id="about-p">Hey you, out there in the cold, sitting naked by the phone, would you touch me? Odio cumque ipsam iusto mollitia animi praesentium doloribus inventore, impedit fuga veniam ullam. Odio illum laboriosam reiciendis dignissimos adipisci?
+               </p><p id="about-p"> Nam culpa porro aspernatur quasi! porro maiores quis debitis, expedita, corporis aut error incidunt consequatur at esse, quod voluptatem est obcaecati! Aliquam quos temporibus adipisci minus?
+               </p></div>
               <p><button id="about-button" type="submit">VIEW MORE</button></p>
             </div> 
           </div>
@@ -70,8 +113,13 @@
     <section class="latest-works">
       <div class="container">
         <div class="latest-header">
-          <h2 class="section-title">LATEST WORKS</h2>
-          <p>Hey you, out there in the cold, sitting naked by the phone, would you touch me?</p>
+          <div class="header-flex">
+           <h2 class="section-title">LATEST WORKS</h2>
+            <div class="blue-line-latest-works">
+              <hr class="blue-hr">
+            </div>
+          </div>
+          <p>Hey you, out there in the cold, sitting naked by the phone, would you touch me?</p>        
         </div>		
         <div class="nav-el">
           <nav id="nav1">
@@ -149,6 +197,9 @@
     <section class="latest-blog">
       <div class="container">
         <h2 class="section-title">OUR LATEST BLOG</h2>
+          <div class="blue-line-blog">
+            <hr class="blue-hr-blog">
+          </div>
           <ul class="blog-elements"> 
             <li class="blog1 col-md-6">
               <div class="my-item">
@@ -212,55 +263,89 @@
     <section class="pricing-plan">
       <div class="container">
         <div class="pricing-header">
-          <h2 class="section-title">OUR PRICING PLAN</h2>
+          <div class="header-flex">
+           <h2 class="section-title">OUR PRICING PLAN</h2>
+             <div class="blue-line-plan">
+               <hr class="blue-hr">
+             </div>
+          </div>
           <p>Hey you, out there in the cold, sitting naked by the phone, would you touch me?</p>
         </div>
-        <ul class="plans">
-            <li class="plan1">
-            <div class="box2">
-              <div class="box-elements">
+        <div class="test-price">
+            <ul class="row">
+              <li class="test-box col-sm-6 col-lg-3">
+                <div class="test-box-content">
                   <i id="pricing-plan-heart" class="fa fa-cloud"></i>
-                  <h3 class="box2-title">BASIC PLAN 20$ MONTH</h3>
-                  <hr style="width: 36px;">
-                  <p>This is a dummy text phrase, and its sole intention is to fill up the space of the container.</p>
-                  <button class="hover-b" type="submit" style="font-size: 15px;">SIGN UP</button>                         
-                </div>  
-              </div>  
-            </li>
-            <li class="plan1">
-              <div class="box2 ">
-                <div class="box-elements">
+                        <h3 class="box2-title">BASIC PLAN 20$ MONTH</h3>
+                        <hr style="width: 36px;">
+                        
+                          <ul class="plan-list">
+                            <li><p>Itobuz Technologies Pvt. Ltd.</p></li>
+                            <li><p>Itobuz Technologies Pvt. Ltd.</p></li>
+                            <li><p>Itobuz Technologies Pvt. Ltd.</p></li>
+                            <li><p>Itobuz Technologies Pvt. Ltd.</p></li>
+                          </ul>
+                       
+                       <button class="hover-b" type="submit" style="font-size: 15px;">SIGN UP</button>
+     
+                </div>
+              </li>
+              <li class="test-box col-sm-6 col-lg-3">
+                <div class="test-box-content">
                   <i id="pricing-plan-heart" class="fa fa-cloud"></i>
-                  <h3 class="box2-title">BASIC PLAN 20$ MONTH</h3>
-                  <hr style="width: 36px;">
-                  <p>This is a dummy text phrase, and its sole intention is to fill up the space of the container.</p>
-                  <button class="hover-b" type="submit" style="font-size: 15px;">SIGN UP</button>                 
-                </div> 
-              </div> 
-            </li>
-            <li class="plan1">
-              <div class="box2">
-                <div class="box-elements">
+                        <h3 class="box2-title">BASIC PLAN 20$ MONTH</h3>
+                        <hr style="width: 36px;">
+                       
+                          <ul class="plan-list">
+                            <li><p>Itobuz Technologies Pvt. Ltd.</p></li>
+                            <li><p>Itobuz Technologies Pvt. Ltd.</p></li>
+                            <li><p>Itobuz Technologies Pvt. Ltd.</p></li>
+                            <li><p>Itobuz Technologies Pvt. Ltd.</p></li>
+                          </ul>
+                        
+                       <button class="hover-b" type="submit" style="font-size: 15px;">SIGN UP</button>
+     
+                </div>
+              </li>
+              <li class="test-box col-sm-6 col-lg-3">
+                <div class="test-box-content">
                   <i id="pricing-plan-heart" class="fa fa-cloud"></i>
-                  <h3 class="box2-title">BASIC PLAN 20$ MONTH</h3>
-                  <hr style="width: 36px;">
-                  <p>This is a dummy text phrase, and its sole intention is to fill up the space of the container.</p>
-                  <button class="hover-b" type="submit" style="font-size: 15px;">SIGN UP</button>                 
-                </div> 
-              </div>
-            </li>
-            <li class="plan1">
-              <div class="box2">
-                <div class="box-elements">
+                        <h3 class="box2-title">BASIC PLAN 20$ MONTH</h3>
+                        <hr style="width: 36px;">
+                       
+                          <ul class="plan-list">
+                            <li><p>Itobuz Technologies Pvt. Ltd.</p></li>
+                            <li><p>Itobuz Technologies Pvt. Ltd.</p></li>
+                            <li><p>Itobuz Technologies Pvt. Ltd.</p></li>
+                            <li><p>Itobuz Technologies Pvt. Ltd.</p></li>
+                          </ul>
+                      
+                       <button class="hover-b" type="submit" style="font-size: 15px;">SIGN UP</button>
+     
+                </div>
+     
+              </li>
+              <li class="test-box col-sm-6 col-lg-3">
+                <div class="test-box-content">
                   <i id="pricing-plan-heart" class="fa fa-cloud"></i>
-                  <h3 class="box2-title">BASIC PLAN 20$ MONTH</h3>
-                  <hr style="width: 36px;">
-                  <p>This is a dummy text phrase, and its sole intention is to fill up the space of the container.</p>
-                  <button class="hover-b" type="submit" style="font-size: 15px;">SIGN UP</button>                  
-                </div> 
-              </div>
-            </li>
-          </ul>
+                        <h3 class="box2-title">BASIC PLAN 20$ MONTH</h3>
+                        <hr style="width: 36px;">
+                        
+                          <ul class="plan-list">
+                            <li><p>Itobuz Technologies Pvt. Ltd.</p></li>
+                            <li><p>Itobuz Technologies Pvt. Ltd.</p></li>
+                            <li><p>Itobuz Technologies Pvt. Ltd.</p></li>
+                            <li><p>Itobuz Technologies Pvt. Ltd.</p></li>
+                          </ul>
+                        
+                       <button class="hover-b" type="submit" style="font-size: 15px;">SIGN UP</button>
+     
+                </div>
+     
+              </li>
+            </ul>
+          </div>
+          
         </div>
     </section>
     <section class="contact-details">
@@ -268,6 +353,9 @@
         <div class="contact-info">
           <div class="contact-us col-lg-6">
             <h2 class="section-title">CONTACT WITH US</h2>
+              <div class="blue-line-contact">
+                <hr class="blue-hr">
+              </div>
             <form class="cont-form">
               <div class="name-email">
                 <input id="name" type="text" name="name" placeholder="Name">
@@ -283,6 +371,9 @@
           </div>
           <div class="off-address col-lg-6">
               <h2 class="section-title">OUR OFFICE ADDRESS</h2>
+                <div class="blue-line-office">
+                  <hr class="blue-hr">
+                </div>
               <div class="off-id">
                 <p><i style="font-size: 16px; padding-right: 11px;" class="fa fa-map-marker"></i>                              221 Baker Street, London</p>
                 <p><i style="font-size: 16px; padding-right: 5px;" class="fa fa-phone"></i>   +123456789, +987654321</p>

@@ -27,9 +27,19 @@ img { max-width: 100%; }
 section { padding: 30px 0; }
 .section-title {
   font-size: 25px;
-  padding: 10px 0;
+  padding-top: 10px;
   font-family: 'Dosis-Bold';
   color: #27a8bd;
+}
+.heading-line-bottom {
+   width: 2px;
+   color: #27a8bd;
+}
+.blue-hr {
+  display: inline-block;
+  width: 24px;
+  background-color: #27a8bd;
+  margin-top: 8px;
 }
 /*===================================*/
 @media screen and (min-width: 768px) {
@@ -37,8 +47,17 @@ section { padding: 30px 0; }
 }
 @media screen and (min-width: 1200px) {
   section { padding: 90px 0; }
-  .section-title { padding: 20px 0;}   
+  .section-title { padding-top: 20px; }   
 }
+/*============C1===============*/
+.navbar {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.navbar-toggler-icon { background-image: url("../images/toggler-icon.png"); }
+.navbar-collapse { justify-content: flex-end;}
 /*======= BANNER ===========*/
 .banner {
   background-image: url("../images/IMG-20180619-WA0018.jpg");
@@ -51,6 +70,35 @@ section { padding: 30px 0; }
 /*======= About ===========*/
 .site-features { text-align: center; }
 .about .section-title { font-size: 20px; }
+.desc-icon1 {
+  background-image: url("../images/icon2.jpg");
+  background-size: cover;
+  height: 40px;
+  width: 40px;
+  display: inline-block;
+ }
+ .desc-icon2 {
+  background-image: url("../images/icon1.jpg");
+  background-size: cover;
+  height: 40px;
+  width: 40px; 
+  display: inline-block;
+ }
+ .desc-icon3 {
+  background-image: url("../images/icon3.jpg");
+  background-size: cover;
+  height: 40px;
+  width: 40px;
+  display: inline-block;
+ }
+ .desc-icon4  {
+  background-image: url("../images/icon4.jpg");
+  background-size: cover;
+  height: 40px;
+  width: 40px;
+  display: inline-block;
+ }
+ 
 
 /*========== ABOUT COMPANY =============*/
 .about-comp { background-color: #e1e1e1; }
@@ -60,18 +108,29 @@ section { padding: 30px 0; }
   align-self: flex-start;
   padding-top: 30px;
 }
+.blue-line-about-comp { margin-right: 150px; } 
+
+#about-button { color: #27a8bd; }
+
 /*==================================*/
 @media screen and (min-width: 576px) {
   .about-comp .container .row { flex-direction: row; }
   .about-comp-info { text-align: left; }
+  .compimg { align-self: center; }
 }
+
 /*========= LATEST WORKS ===========*/
+.blue-line-latest-works { margin-right: 134px; } 
 .works-latest ul {
   padding: 0;
   list-style: none;
 }
 .latest-box { margin: 8px 0; }
 .latest-header { text-align: center; }
+.header-flex {
+  display: flex;
+  flex-direction: column;
+}
 #nav1 { text-align: center; }
 #nav1 a {
   margin-right: 17px;
@@ -172,8 +231,22 @@ section { padding: 30px 0; }
 @media screen and (min-width: 576px) {
   .latest-box { margin: 15px 0; }
 }
+@media screen and (min-width: 768px) {
+  .latest-header { 
+    justify-content: space-between; 
+    display: flex;
+   }
+  .section-title { padding-top: 0;}
+}
 /*=========== LATEST BLOG ==========*/
 .latest-blog .section-title { text-align: center; } 
+.blue-line-blog { margin-right: 155px; } 
+.blue-hr-blog {
+  display: block;
+  width: 24px;
+  background-color: #27a8bd;
+  margin-top: 8px;
+}
 .blog-elements {
     display: flex;
     flex-flow: row wrap;
@@ -223,51 +296,74 @@ section { padding: 30px 0; }
   background-position: center; 
   height: 100%;
 }
-.latest-blog .container .blog-elements .blog1:nth-child(n+3) .item-features .feature-text {
+.latest-blog .container .blog-elements .blog1:nth-child(2n) .item-features .feature-text {
   order: 2;
 }
 /*=========================*/
 @media screen and (min-width: 576px) {
   .blog1 { margin: 5px 0;}
 }
+  
 @media screen and (min-width: 768px) {
+  .latest-blog .container .section-title { text-align: left; }
   .blog1 {
     padding: 0;
     margin: 0;
   }
+  .blue-hr-blog { display: inline-block; }
   .blog-elements {padding-top: 15px;}
+  .latest-blog .container .blog-elements .blog1:nth-child(2n) .item-features .feature-text {
+    order: 1; }
+
+  .latest-blog .container .blog-elements .blog1:nth-child(n+3) .item-features .feature-text {
+    order: 2;
+   }
+   
 }
+
 /*==========PRICING PLAN============*/
 .pricing-header {text-align: center;}
-.plans {
-  list-style: none;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  padding: 0;
-}
-.plan1 {
- background-color: #f1f1f1;
- margin: 3px;
-}
-.box2 {
-width: 216px;
-height: 305px;
-padding: 0px 10px 0px 10px;
-text-align: center;
-}
-.box-elements { padding-top: 34px; }
+.blue-line-plan { margin-right: 160px; } 
 #pricing-plan-heart { font-size: 20px; }
+.header-flex {
+  display: flex;
+  flex-direction: column;
+}
 .box2-title {
 font-size: 15px;
 line-height: 3;
 }
-.box2 ul li {
-padding: 5px;
-font-family: Bahnschrift;
+.plan-list {
+  list-style: none;
+  padding: 0;
 }
+.test-price ul {
+  list-style: none;
+  padding: 0;
+}
+.test-box {
+  margin: 10px 0;
+}
+.test-box-content {
+  width:100%;
+  background-color: #f1f1f1;
+  height: 350px;
+  text-align: center;
+  padding: 20px 0;
+}
+/*=================================*/
+@media screen and (min-width: 768px) {
+  .pricing-header { 
+    display: flex;
+    justify-content: space-between;
+   }
+  .section-title { padding-top: 0;}
+}
+/*=================================*/
+
 /*=======CONTACT DETAILS========*/
 .contact-details { background-color: #efefef; }
+.blue-line-contact { margin-right: 162px; } 
 .contact-info {
   display: flex;
   flex-direction: column;
@@ -301,6 +397,7 @@ height: 35px;
  padding-top: 20px;
  text-align: center;
 }
+.blue-line-office { margin-right: 190px; } 
 .off-id { padding-top: 20px; }
 /*=====================*/
 @media screen and (min-width: 992px) {
@@ -317,11 +414,27 @@ height: 35px;
 margin-top: 10px;
 text-align: center;
 }
-.foot-icons { text-align: center; }
+.foot-icons { 
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+ }
 #foot-fa {
   border-style: solid;
   border-width: 1px;
   border-radius: 50%;
   padding: 5px;
   margin: 5px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;   
 }
+/*=======================*/
+@media screen and (min-width: 768px) { 
+  .foot-icons { justify-content: center; }
+}
+/*=======================*/
+

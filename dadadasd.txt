@@ -1,0 +1,14 @@
+mobile design
+
+1. watch bootstrap 4 online documentation on navbar.
+
+2. use inline-block for the icons in "about" section.
+
+3. perfectly align foot-icons.
+   use flex.
+
+4. about-company section: align-items: center.
+
+5. latest blog: alternate picture placing. 
+
+6. use flex for desired layer (768px onwards).
